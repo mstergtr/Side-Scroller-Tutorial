@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4548801053889715763}
   - component: {fileID: 4548801053889715762}
   - component: {fileID: 4106941500049318806}
-  - component: {fileID: 2567663590823850008}
   - component: {fileID: 5455321431630979676}
+  - component: {fileID: 3722738720389918439}
   m_Layer: 0
   m_Name: asteroid
   m_TagString: Enemy
@@ -131,19 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 2
---- !u!114 &2567663590823850008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4548801053889715766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c8cc0c1d370db3458dd97857ef9bd89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!50 &5455321431630979676
 Rigidbody2D:
   serializedVersion: 4
@@ -165,3 +152,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3722738720389918439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4548801053889715766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8cc0c1d370db3458dd97857ef9bd89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
