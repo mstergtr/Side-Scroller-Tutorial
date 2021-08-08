@@ -117,7 +117,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   deathPrefab: {fileID: 1175227662619140799, guid: 181b5adc09e52684ab57f1b1d4295a5d, type: 3}
-  score: 5
 --- !u!50 &9132979069947080981
 Rigidbody2D:
   serializedVersion: 4
@@ -164,4 +163,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8cc0c1d370db3458dd97857ef9bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2

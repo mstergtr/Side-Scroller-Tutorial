@@ -23,14 +23,15 @@ namespace SteamK12.SpaceShooter
             }
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        void OnTriggerEnter2D(Collider2D other) 
         {
-            Enemy enemy = collision.GetComponent<Enemy>();
+            Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
             }
             Destroy(gameObject);
         }
+
     }
 }
