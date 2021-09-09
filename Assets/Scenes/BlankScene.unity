@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!20 &928962045 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 8521524509827741734, guid: 3baceb9c67aac5347a2d0c6a63659f3e, type: 3}
-  m_PrefabInstance: {fileID: 8521524510076469337}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1558647921
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1558647923}
   - component: {fileID: 1558647922}
-  - component: {fileID: 1558647924}
   m_Layer: 0
   m_Name: player1
   m_TagString: Untagged
@@ -211,22 +205,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1558647924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558647921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa4274f2204a5c443a2c0a6c1912e0b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controlXSpeed: 10
-  controlYSpeed: 10
-  cam: {fileID: 928962045}
-  bulletPrefab: {fileID: 4226046057999662261, guid: 62ee983349705b3418b2223778222833, type: 3}
 --- !u!1001 &7226280690608308146
 PrefabInstance:
   m_ObjectHideFlags: 0
