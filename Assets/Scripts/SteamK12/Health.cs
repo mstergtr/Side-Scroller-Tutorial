@@ -19,9 +19,5 @@ namespace SteamK12.SpaceShooter
                 Destroy(gameObject);
             }
         }
-
-        private void Update()
-        {
-        }
     }
 }
