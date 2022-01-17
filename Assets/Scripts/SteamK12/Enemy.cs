@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace SteamK12.SpaceShooter
 {
     public class Enemy : MonoBehaviour
     {
         [SerializeField] int health = 2;
-        //[SerializeField] int score = 10;
-        public GameObject deathPrefab;
+        [SerializeField] int score = 10;
+        [SerializeField] GameObject deathPrefab;
         
         public void TakeDamage (int damage)
         {
@@ -18,7 +15,7 @@ namespace SteamK12.SpaceShooter
             if (health <= 0)
             {
                 Instantiate(deathPrefab, transform.position, transform.rotation);
-                //ScoreManager.instance.IncreseScore(score);
+                ScoreManager.Instance.IncreseScore(score);
                 Destroy(gameObject);
             }
         }

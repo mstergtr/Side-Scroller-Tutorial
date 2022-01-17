@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SteamK12.SpaceShooter
 {
     public class AnimationDestroy : MonoBehaviour
     {
-        public Animator animator;
+        [SerializeField] Animator animator;
 
         void OnEnable()
         {

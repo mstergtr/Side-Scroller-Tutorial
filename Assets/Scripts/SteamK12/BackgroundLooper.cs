@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SteamK12.SpaceShooter
 {
     public class BackgroundLooper : MonoBehaviour
     {
-        public float scrollSpeed = 0.5f;
-        public float xRepeatPoint = -3.0f;
-        public float xResetPoint = 3.0f;
+        [SerializeField] float scrollSpeed = 0.5f;
+        [SerializeField] float xRepeatPoint = -3.0f;
+        [SerializeField] float xResetPoint = 3.0f;
 
         void Update()
         {

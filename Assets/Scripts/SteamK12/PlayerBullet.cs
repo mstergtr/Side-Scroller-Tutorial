@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SteamK12.SpaceShooter
 {
     public class PlayerBullet : MonoBehaviour
     {
-        public float speed = 2.0f;
-        public int damage = 1;
+        [SerializeField] float speed = 2.0f;
+        [SerializeField] int damage = 1;
 
         void Update()
         {

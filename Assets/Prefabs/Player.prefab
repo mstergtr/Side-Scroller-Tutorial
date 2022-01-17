@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  deathPrefab: {fileID: 1175227662619140799, guid: 181b5adc09e52684ab57f1b1d4295a5d, type: 3}
 --- !u!61 &4214114511072268490
 BoxCollider2D:
   m_ObjectHideFlags: 0

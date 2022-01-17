@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -7,16 +5,16 @@ namespace SteamK12.SpaceShooter
 {
     public class ScoreManager : MonoBehaviour
     {
-        public static ScoreManager instance;
-        public int currentScore = 0;
-        public int highScore = 0;
+        public static ScoreManager Instance;
+        [SerializeField] int currentScore = 0;
+        [SerializeField] int highScore = 0;
 
-        public TextMeshProUGUI currentScoreText;
-        public TextMeshProUGUI highScoreText;
+        [SerializeField] TextMeshProUGUI currentScoreText;
+        [SerializeField] TextMeshProUGUI highScoreText;
 
         private void Awake()
         {
-            instance = this;
+            Instance = this;
         }
         private void Start()
         {

@@ -481,6 +481,14 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 565124271, guid: 36042836f6e04b54a86632751c970762, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 4214114511072268491, guid: 36042836f6e04b54a86632751c970762, type: 3}
+      propertyPath: deathPrefab
+      value: 
+      objectReference: {fileID: 1175227662619140799, guid: 181b5adc09e52684ab57f1b1d4295a5d, type: 3}
     - target: {fileID: 4214114511072268528, guid: 36042836f6e04b54a86632751c970762, type: 3}
       propertyPath: m_Name
       value: Player

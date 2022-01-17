@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 //code found from here: https://pressstart.vip/tutorials/2018/06/28/41/keep-object-in-bounds.html
@@ -7,7 +5,7 @@ namespace SteamK12.SpaceShooter
 {
     public class BoundariesOrtho : MonoBehaviour
     {
-        public Camera MainCamera;
+        [SerializeField] Camera mainCamera;
         private Vector2 screenBounds;
         private float objectWidth;
         private float objectHeight;
@@ -15,7 +13,7 @@ namespace SteamK12.SpaceShooter
         // Use this for initialization
         void Start () 
         {
-            screenBounds = MainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, MainCamera.transform.position.z));
+            screenBounds = mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, mainCamera.transform.position.z));
             objectWidth = transform.GetComponent<SpriteRenderer>().bounds.extents.x; //extents = size of width / 2
             objectHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y; //extents = size of height / 2
         }

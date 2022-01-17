@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SteamK12.SpaceShooter
 {
     public class PlayerController : MonoBehaviour
     {
-        public float speed = 5f;
-        public GameObject bulletPrefab;
-        public Transform firePoint;
-        public Animator animator;
-        private float xThrow, yThrow;
+        [SerializeField] float speed = 5f;
+        [SerializeField] GameObject bulletPrefab;
+        [SerializeField] Transform firePoint;
+        [SerializeField] Animator animator;
+        private float xInput, yInput;
 
         void Update()
         {
@@ -24,15 +22,13 @@ namespace SteamK12.SpaceShooter
 
         private void ProcessMovement()
         {
-            xThrow = Input.GetAxis("Horizontal");
-            yThrow = Input.GetAxis("Vertical");
+            xInput = Input.GetAxis("Horizontal");
+            yInput = Input.GetAxis("Vertical");
 
-            transform.Translate(Vector3.right * xThrow * speed * Time.deltaTime);
-            transform.Translate(Vector3.up * yThrow * speed * Time.deltaTime);
-            
-            Vector3 pos = transform.position;
+            transform.Translate(Vector3.right * xInput * speed * Time.deltaTime);
+            transform.Translate(Vector3.up * yInput * speed * Time.deltaTime);
 
-            animator.SetFloat("positionY", yThrow);
+            animator.SetFloat("positionY", yInput);
         }
     }
 }

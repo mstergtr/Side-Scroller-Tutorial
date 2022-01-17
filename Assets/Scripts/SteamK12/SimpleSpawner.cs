@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SteamK12.SpaceShooter
 {
     public class SimpleSpawner : MonoBehaviour
     {
-        public GameObject enemy;
-        public Transform[] spawnPoints;
-        public bool isSpawning = true;
-        public float timeBetweenSpawns = 2f;
-        public float spawnTime = 1f;
+        [SerializeField] GameObject enemy;
+        [SerializeField] Transform[] spawnPoints;
+        [SerializeField] bool isSpawning = true;
+        [SerializeField] float timeBetweenSpawns = 2f;
+        [SerializeField] float spawnTime = 1f;
 
         void Start()
         {
